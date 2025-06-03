@@ -182,6 +182,15 @@
     <Content Include="Default.aspx" />
     <Content Include="FAQs.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Footers\AttendancePolicy.aspx" />
+    <Content Include="Footers\Careers.aspx" />
+    <Content Include="Footers\CodeOfConduct.aspx" />
+    <Content Include="Footers\Graduation.aspx" />
+    <Content Include="Footers\OurTeam.aspx" />
+    <Content Include="Footers\PrivacyPolicy.aspx" />
+    <Content Include="Footers\SportsDay.aspx" />
+    <Content Include="Footers\TopStudents.aspx" />
+    <Content Include="Footers\UpcomingEvents.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Application.aspx" />
     <Content Include="Pages\menzi_high.jpg" />
@@ -384,6 +393,69 @@
     </Compile>
     <Compile Include="FAQs.aspx.designer.cs">
       <DependentUpon>FAQs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\AttendancePolicy.aspx.cs">
+      <DependentUpon>AttendancePolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\AttendancePolicy.aspx.designer.cs">
+      <DependentUpon>AttendancePolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\Careers.aspx.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\Careers.aspx.designer.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\CodeOfConduct.aspx.cs">
+      <DependentUpon>CodeOfConduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\CodeOfConduct.aspx.designer.cs">
+      <DependentUpon>CodeOfConduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\Graduation.aspx.cs">
+      <DependentUpon>Graduation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\Graduation.aspx.designer.cs">
+      <DependentUpon>Graduation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\OurTeam.aspx.cs">
+      <DependentUpon>OurTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\OurTeam.aspx.designer.cs">
+      <DependentUpon>OurTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\PrivacyPolicy.aspx.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\PrivacyPolicy.aspx.designer.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\SportsDay.aspx.cs">
+      <DependentUpon>SportsDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\SportsDay.aspx.designer.cs">
+      <DependentUpon>SportsDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\TopStudents.aspx.cs">
+      <DependentUpon>TopStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\TopStudents.aspx.designer.cs">
+      <DependentUpon>TopStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footers\UpcomingEvents.aspx.cs">
+      <DependentUpon>UpcomingEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footers\UpcomingEvents.aspx.designer.cs">
+      <DependentUpon>UpcomingEvents.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

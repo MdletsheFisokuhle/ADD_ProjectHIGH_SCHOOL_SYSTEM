@@ -98,8 +98,6 @@
                     <li><a href="/StudentPortal" style="color: white; text-decoration: none;">Student Portal</a></li>
                     <li><a href="/Contact" style="color: white; text-decoration: none;">Contact Us</a></li>
                     <li><a href="/FAQs" style="color: white; text-decoration: none;">Frequently Asked Questions</a></li>
-                    <li><a href="/Library" style="color: white; text-decoration: none;">Library Resources</a></li>
-                    <li><a href="/Calendar" style="color: white; text-decoration: none;">School Calendar</a></li>
                 </ul>
             </div>
             
@@ -107,9 +105,9 @@
             <div class="col-md-3">
                 <h5>SCHOOL POLICIES</h5>
                 <ul style="list-style: none; padding: 0;">
-                    <li><a href="/CodeOfConduct" style="color: white; text-decoration: none;">Code of Conduct</a></li>
-                    <li><a href="/AttendancePolicy" style="color: white; text-decoration: none;">Attendance Policy</a></li>
-                    <li><a href="/PrivacyPolicy" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+                    <li><a href="/Footers/CodeOfConduct" style="color: white; text-decoration: none;">Code of Conduct</a></li>
+                    <li><a href="/Footers/AttendancePolicy" style="color: white; text-decoration: none;">Attendance Policy</a></li>
+                    <li><a href="/Footers/PrivacyPolicy" style="color: white; text-decoration: none;">Privacy Policy</a></li>
                 </ul>
             </div>
 
@@ -117,10 +115,9 @@
             <div class="col-md-3">
                 <h5>SCHOOL EVENTS</h5>
                 <ul style="list-style: none; padding: 0;">
-                    <li><a href="/UpcomingEvents" style="color: white; text-decoration: none;">Upcoming Events</a></li>
-                    <li><a href="/SportsDay" style="color: white; text-decoration: none;">Sports Day</a></li>
-                    <li><a href="/Graduation" style="color: white; text-decoration: none;">Graduation</a></li>
-                    <li><a href="/Fundraisers" style="color: white; text-decoration: none;">Fundraisers</a></li>
+                    <li><a href="/Footers/UpcomingEvents" style="color: white; text-decoration: none;">Upcoming Events</a></li>
+                    <li><a href="/Footers/SportsDay" style="color: white; text-decoration: none;">Sports Day</a></li>
+                    <li><a href="/Footers/Graduation" style="color: white; text-decoration: none;">Graduation</a></li>
                 </ul>
             </div>
 
@@ -129,9 +126,9 @@
                 <h5>ABOUT THE SCHOOL</h5>
                 <ul style="list-style: none; padding: 0;">
                     <li><a href="/About" style="color: white; text-decoration: none;">About Us</a></li>
-                    <li><a href="/OurTeam" style="color: white; text-decoration: none;">Our Team</a></li>
-                    <li><a href="/Careers" style="color: white; text-decoration: none;">Join Our Staff</a></li>
-                    <li><a href="/Alumni" style="color: white; text-decoration: none;">Alumni</a></li>
+                    <li><a href="/Footers/OurTeam" style="color: white; text-decoration: none;">Our Team</a></li>
+                    <li><a href="/Footers/Careers" style="color: white; text-decoration: none;">Join Our Staff</a></li>
+                    <li><a href="/Footers/Graduation" style="color: white; text-decoration: none;">Hall Of Hall</a></li>
                 </ul>
             </div>
         </div>
