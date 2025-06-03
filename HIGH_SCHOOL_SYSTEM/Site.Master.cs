@@ -66,73 +66,44 @@ namespace HIGH_SCHOOL_SYSTEM
                 }
             }
         }
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Context.User.Identity.IsAuthenticated)
+            if (!IsPostBack)
             {
-                // Check user role and set the dropdown label
-                if (Context.User.IsInRole("Student"))
+                var identity = Context.User.Identity;
+                if (identity.IsAuthenticated)
                 {
-                    lblOptions.Text = "Student Dashboard";
-                }
-                else if (Context.User.IsInRole("Admin"))
-                {
-                    lblOptions.Text = "Admin Dashboard";
-                }
-                else if (Context.User.IsInRole("Teachers"))
-                {
-                    lblOptions.Text = "Teachers Dashboard";
+                    liApplication.Visible = true;
+
+                    if (Context.User.IsInRole("Admin"))
+                    {
+                        lblOptions.Text = "Admin Dashboard";
+                        liApplicationList.Visible = true;
+                    }
+                    else if (Context.User.IsInRole("Teachers"))
+                    {
+                        lblOptions.Text = "Teachers Dashboard";
+                        liApplicationList.Visible = false;
+                    }
+                    else if (Context.User.IsInRole("Student"))
+                    {
+                        lblOptions.Text = "Student Dashboard";
+                        liApplicationList.Visible = false;
+                    }
+                    else
+                    {
+                        lblOptions.Text = "User Dashboard";
+                        liApplication.Visible = true; // Keep this visible for all authenticated users
+                        liApplicationList.Visible = false;
+                    }
                 }
                 else
                 {
-                    lblOptions.Text = ""; // Default for other roles
+                    lblOptions.Text = "";
+                    liApplication.Visible = false;
+                    liApplicationList.Visible = false;
                 }
             }
-            else
-            {
-                lblOptions.Text = "";
-            }
-
-            liStudent.Visible = true;
-            /* Hide all menu items initially
-            liCustomer.Visible = false;
-            liManageUser.Visible = false;
-            liViewOrders.Visible = false;
-            liProductTable.Visible = false;
-            liOrderManage.Visible = false;
-            liReports.Visible = false;
-            liRoles.Visible = false;
-            liLogs.Visible = false;
-            liDelivery.Visible = false;
-            liDeliveryEmployee.Visible = false;*/
-
-            // Role-based menu visibility
-            if (Context.User.IsInRole("Student"))
-            {
-                liStudent.Visible = true;
-                /*liCustomer.Visible = true;
-                liManageUser.Visible = true;
-                liViewOrders.Visible = true;
-                liDelivery.Visible = true; // Customers can track deliveries*/
-            }
-            if (Context.User.IsInRole("Admin"))
-            {
-                /*liProductTable.Visible = true;
-                liOrderManage.Visible = true;
-                liCustomer.Visible = true; // Employee can also shop*/
-            }
-    
-            if (Context.User.IsInRole("Teachers"))
-            {
-                /*liProductTable.Visible = true;
-                liOrderManage.Visible = true;
-                liReports.Visible = true;
-                liCustomer.Visible = true; // Owner can also shop
-                liRoles.Visible = true;
-                liLogs.Visible = true;*/
-            }
-
         }
 
 
