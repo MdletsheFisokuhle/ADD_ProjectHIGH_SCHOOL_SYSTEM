@@ -193,6 +193,7 @@
     <Content Include="Footers\UpcomingEvents.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Application.aspx" />
+    <Content Include="Pages\ApplicationList.aspx" />
     <Content Include="Pages\menzi_high.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -467,6 +468,13 @@
     </Compile>
     <Compile Include="Pages\Application.aspx.designer.cs">
       <DependentUpon>Application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ApplicationList.aspx.cs">
+      <DependentUpon>ApplicationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ApplicationList.aspx.designer.cs">
+      <DependentUpon>ApplicationList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

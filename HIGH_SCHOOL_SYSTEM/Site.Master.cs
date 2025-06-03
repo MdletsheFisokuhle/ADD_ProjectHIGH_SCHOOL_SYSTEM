@@ -69,8 +69,72 @@ namespace HIGH_SCHOOL_SYSTEM
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Context.User.Identity.IsAuthenticated)
+            {
+                // Check user role and set the dropdown label
+                if (Context.User.IsInRole("Student"))
+                {
+                    lblOptions.Text = "Student Dashboard";
+                }
+                else if (Context.User.IsInRole("Admin"))
+                {
+                    lblOptions.Text = "Admin Dashboard";
+                }
+                else if (Context.User.IsInRole("Teachers"))
+                {
+                    lblOptions.Text = "Teachers Dashboard";
+                }
+                else
+                {
+                    lblOptions.Text = ""; // Default for other roles
+                }
+            }
+            else
+            {
+                lblOptions.Text = "";
+            }
+
+            liStudent.Visible = true;
+            /* Hide all menu items initially
+            liCustomer.Visible = false;
+            liManageUser.Visible = false;
+            liViewOrders.Visible = false;
+            liProductTable.Visible = false;
+            liOrderManage.Visible = false;
+            liReports.Visible = false;
+            liRoles.Visible = false;
+            liLogs.Visible = false;
+            liDelivery.Visible = false;
+            liDeliveryEmployee.Visible = false;*/
+
+            // Role-based menu visibility
+            if (Context.User.IsInRole("Student"))
+            {
+                liStudent.Visible = true;
+                /*liCustomer.Visible = true;
+                liManageUser.Visible = true;
+                liViewOrders.Visible = true;
+                liDelivery.Visible = true; // Customers can track deliveries*/
+            }
+            if (Context.User.IsInRole("Admin"))
+            {
+                /*liProductTable.Visible = true;
+                liOrderManage.Visible = true;
+                liCustomer.Visible = true; // Employee can also shop*/
+            }
+    
+            if (Context.User.IsInRole("Teachers"))
+            {
+                /*liProductTable.Visible = true;
+                liOrderManage.Visible = true;
+                liReports.Visible = true;
+                liCustomer.Visible = true; // Owner can also shop
+                liRoles.Visible = true;
+                liLogs.Visible = true;*/
+            }
 
         }
+
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {

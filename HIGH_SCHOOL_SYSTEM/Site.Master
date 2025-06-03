@@ -50,6 +50,32 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/FAQs">FAQs</a></li>
+                <!-- Dropdown for Private Pages -->
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                <asp:Label ID="lblOptions" runat="server" Text="Dashboard"></asp:Label> <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li id="liApplication" runat="server"><a class="dropdown-item" runat="server" href="~/Pages/Application">Application</a></li>
+                                <!--<li id="liManageUser" runat="server"><a class="dropdown-item" runat="server" href="~/Private_Pages/ManageUser">My Details</a></li>
+                                <li id="liViewOrders" runat="server"><a class="dropdown-item" runat="server" href="~/Private_Pages/ViewOrders">View Orders</a></li>
+                                <li id="liDelivery" runat="server"><a class="dropdown-item" runat="server" href="~/Private_Pages/Delivery">Track Delivery</a></li> -->
+
+
+                                <!-- Admin and Teachers specific -->
+                                <li id="liStudent" runat="server"><a class="dropdown-item" runat="server" href="~/Pages/ApplicationList.aspx">Product Table</a></li>
+                              <!--  <li id="liOrderManage" runat="server"><a class="dropdown-item" runat="server" href="~/Private_Pages/OrderManage.aspx">Order Management</a></li>
+                                <li id="liLogs" runat="server">
+                                    <asp:HyperLink runat="server" CssClass="dropdown-item" NavigateUrl="~/Private_Pages/Logs.aspx">Audit Logs</asp:HyperLink>
+                                </li>
+                                <li id="liRoles" runat="server">
+                                    <asp:HyperLink runat="server" CssClass="dropdown-item" NavigateUrl="~/Private_Pages/AssignRoles.aspx">Assign Roles</asp:HyperLink>
+                                </li>
+                                <li id="liReports" runat="server">
+                                    <asp:HyperLink runat="server" CssClass="dropdown-item" NavigateUrl="~/Private_Pages/Report.aspx">Reports</asp:HyperLink>
+                                </li>  -->
+                            </ul>
+                        </li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
@@ -74,20 +100,7 @@
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
         <hr />
-        <div class="row">
-          <section aria-label="mapSection" class=" row">
-            <div style="width: 100%; background-color: darkgray; height: 450px; display: flex; justify-content: center; align-items: center; padding: 0;">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4181.327868849989!2d30.87081317555051!3d-29.959752474966308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef654a0265daa87%3A0xa05b3360ec8cefca!2sMenzi%20High%20School!5e1!3m2!1sen!2sza!4v1746761914082!5m2!1sen!2sza"
-                style="border: 0; width: 100%; height: 100%;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
 
-
-          </section>
-        </div>
 <footer style="background-color: #333; color: white; padding: 20px 0;">
     <div class="container">
         <div class="row">
