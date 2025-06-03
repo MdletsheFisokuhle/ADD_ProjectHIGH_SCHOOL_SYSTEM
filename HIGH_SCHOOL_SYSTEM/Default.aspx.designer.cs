@@ -11,16 +11,7 @@ namespace HIGH_SCHOOL_SYSTEM
 {
 
 
-  public partial class _Default
-  {
-
-    /// <summary>
-    /// menziHighImg control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Image menziHighImg;
-  }
+    public partial class _Default
+    {
+    }
 }
