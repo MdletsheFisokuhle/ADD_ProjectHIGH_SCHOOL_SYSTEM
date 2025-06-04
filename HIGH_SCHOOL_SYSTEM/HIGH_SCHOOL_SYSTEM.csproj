@@ -193,12 +193,16 @@
     <Content Include="Footers\TopStudents.aspx" />
     <Content Include="Footers\UpcomingEvents.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\AdminSubjectSummary.aspx" />
     <Content Include="Pages\Application.aspx" />
+    <Content Include="Pages\ApproveSubjects.aspx" />
     <Content Include="Pages\menzi_high.jpg" />
     <Content Include="Pages\PendingApplications.aspx" />
     <Content Include="Pages\ReviewApplication.aspx" />
     <Content Include="Pages\StudentDetails.aspx" />
+    <Content Include="Pages\StudentProfile.aspx" />
     <Content Include="Pages\StudentsList.aspx" />
+    <Content Include="Pages\SubjectRegistration.aspx" />
     <Content Include="Pages\ViewApplicationStatus.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -475,12 +479,26 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Pages\AdminSubjectSummary.aspx.cs">
+      <DependentUpon>AdminSubjectSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminSubjectSummary.aspx.designer.cs">
+      <DependentUpon>AdminSubjectSummary.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Application.aspx.cs">
       <DependentUpon>Application.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Application.aspx.designer.cs">
       <DependentUpon>Application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ApproveSubjects.aspx.cs">
+      <DependentUpon>ApproveSubjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ApproveSubjects.aspx.designer.cs">
+      <DependentUpon>ApproveSubjects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\PendingApplications.aspx.cs">
       <DependentUpon>PendingApplications.aspx</DependentUpon>
@@ -503,12 +521,26 @@
     <Compile Include="Pages\StudentDetails.aspx.designer.cs">
       <DependentUpon>StudentDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\StudentProfile.aspx.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StudentProfile.aspx.designer.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\StudentsList.aspx.cs">
       <DependentUpon>StudentsList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\StudentsList.aspx.designer.cs">
       <DependentUpon>StudentsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SubjectRegistration.aspx.cs">
+      <DependentUpon>SubjectRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SubjectRegistration.aspx.designer.cs">
+      <DependentUpon>SubjectRegistration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ViewApplicationStatus.aspx.cs">
       <DependentUpon>ViewApplicationStatus.aspx</DependentUpon>

@@ -81,8 +81,12 @@ namespace HIGH_SCHOOL_SYSTEM
                         liPendingApplication.Visible = true;
                         liReviewApplication.Visible = true;
                         liStudentsList.Visible = true;
+                        liApproveSubject.Visible = true;
+                        liSubject.Visible = true;
                         liApplication.Visible = false;
                         liApplicationStatus.Visible = false;
+                        liSubjectRegistration.Visible = false;
+                        liStudentProfile.Visible = false;
                     }
                     else if (Context.User.IsInRole("Teachers"))
                     {
@@ -96,7 +100,11 @@ namespace HIGH_SCHOOL_SYSTEM
                         liPendingApplication.Visible = false;
                         liReviewApplication.Visible = false;
                         liStudentsList.Visible = false;
+                        liApproveSubject.Visible = false;
+                        liSubject.Visible = false;
                         liApplicationStatus.Visible = true;
+                        liSubjectRegistration.Visible = true;
+                        liStudentProfile.Visible = true;
                     }
                     else
                     {

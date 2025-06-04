@@ -41,6 +41,12 @@
                                 <li id="liApplicationStatus" runat="server">
                                     <a class="dropdown-item" runat="server" href="~/Pages/ViewApplicationStatus.aspx">Application Status</a>
                                 </li>
+                                 <li id="liStudentProfile" runat="server">
+                                    <a class="dropdown-item" runat="server" href="~/Pages/StudentProfile.aspx">Student Profile</a>
+                                </li>
+                                  <li id="liSubjectRegistration" runat="server">
+                                    <a class="dropdown-item" runat="server" href="~/Pages/SubjectRegistration.aspx">Subject Registration</a>
+                                </li>
                                    <li id="liStudentsList" runat="server">
                                     <a class="dropdown-item" runat="server" href="~/Pages/StudentsList.aspx">Students Enrollment List</a>
                                 </li>
@@ -50,6 +56,14 @@
                                    <li id="liReviewApplication" runat="server">
                                     <a class="dropdown-item" runat="server" href="~/Pages/ReviewApplication.aspx">Review Application</a>
                                 </li>
+                                                                </li>
+                                 <li id="liSubject" runat="server">
+                                    <a class="dropdown-item" runat="server" href="~/Pages/AdminSubjectSummary.aspx">Admin StudentSubject Count</a>
+                                </li>
+                                 <li id="liApproveSubject" runat="server">
+                                    <a class="dropdown-item" runat="server" href="~/Pages/ApproveSubjects.aspx">Subject Registration Approval</a>
+                                </li>
+
                             </ul>
                         </li>
                     </ul>
