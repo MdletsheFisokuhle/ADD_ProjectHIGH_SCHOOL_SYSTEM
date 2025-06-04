@@ -7,74 +7,65 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HIGH_SCHOOL_SYSTEM
+namespace HIGH_SCHOOL_SYSTEM.Pages
 {
 
 
-    public partial class SiteMaster
+    public partial class ViewApplicationStatus
     {
 
         /// <summary>
-        /// lblOptions control.
+        /// statusPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOptions;
+        protected global::System.Web.UI.WebControls.Panel statusPanel;
 
         /// <summary>
-        /// liApplication control.
+        /// emailLBL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liApplication;
+        protected global::System.Web.UI.WebControls.Label emailLBL;
 
         /// <summary>
-        /// liApplicationStatus control.
+        /// emailTXT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liApplicationStatus;
+        protected global::System.Web.UI.WebControls.TextBox emailTXT;
 
         /// <summary>
-        /// liStudentsList control.
+        /// rfvEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liStudentsList;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
 
         /// <summary>
-        /// liPendingApplication control.
+        /// checkStatusBTN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liPendingApplication;
+        protected global::System.Web.UI.WebControls.Button checkStatusBTN;
 
         /// <summary>
-        /// liReviewApplication control.
+        /// resultLBL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liReviewApplication;
-
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Label resultLBL;
     }
 }

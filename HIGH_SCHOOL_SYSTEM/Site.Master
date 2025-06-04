@@ -38,8 +38,17 @@
                                 <li id="liApplication" runat="server">
                                     <a class="dropdown-item" runat="server" href="~/Pages/Application">Application</a>
                                 </li>
-                                <li id="liApplicationList" runat="server">
-                                    <a class="dropdown-item" runat="server" href="~/Pages/ApplicationList.aspx">Application List</a>
+                                <li id="liApplicationStatus" runat="server">
+                                    <a class="dropdown-item" runat="server" href="~/Pages/ViewApplicationStatus.aspx">Application Status</a>
+                                </li>
+                                   <li id="liStudentsList" runat="server">
+                                    <a class="dropdown-item" runat="server" href="~/Pages/StudentsList.aspx">Students Enrollment List</a>
+                                </li>
+                                <li id="liPendingApplication" runat="server">
+                                    <a class="dropdown-item" runat="server" href="~/Pages/PendingApplications.aspx">Pending Application</a>
+                                </li>
+                                   <li id="liReviewApplication" runat="server">
+                                    <a class="dropdown-item" runat="server" href="~/Pages/ReviewApplication.aspx">Review Application</a>
                                 </li>
                             </ul>
                         </li>

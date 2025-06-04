@@ -7,74 +7,56 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HIGH_SCHOOL_SYSTEM
+namespace HIGH_SCHOOL_SYSTEM.Pages.Admin
 {
 
 
-    public partial class SiteMaster
+    public partial class StudentsList
     {
 
         /// <summary>
-        /// lblOptions control.
+        /// txtSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOptions;
+        protected global::System.Web.UI.WebControls.TextBox txtSearch;
 
         /// <summary>
-        /// liApplication control.
+        /// btnSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liApplication;
+        protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// liApplicationStatus control.
+        /// ddlGradeFilter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liApplicationStatus;
+        protected global::System.Web.UI.WebControls.DropDownList ddlGradeFilter;
 
         /// <summary>
-        /// liStudentsList control.
+        /// gvStudents control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liStudentsList;
+        protected global::System.Web.UI.WebControls.GridView gvStudents;
 
         /// <summary>
-        /// liPendingApplication control.
+        /// btnExport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liPendingApplication;
-
-        /// <summary>
-        /// liReviewApplication control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liReviewApplication;
-
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button btnExport;
     }
 }

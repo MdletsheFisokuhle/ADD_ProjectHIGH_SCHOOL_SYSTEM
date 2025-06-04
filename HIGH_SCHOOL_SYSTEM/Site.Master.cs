@@ -78,30 +78,38 @@ namespace HIGH_SCHOOL_SYSTEM
                     if (Context.User.IsInRole("Admin"))
                     {
                         lblOptions.Text = "Admin Dashboard";
-                        liApplicationList.Visible = true;
+                        liPendingApplication.Visible = true;
+                        liReviewApplication.Visible = true;
+                        liStudentsList.Visible = true;
+                        liApplication.Visible = false;
+                        liApplicationStatus.Visible = false;
                     }
                     else if (Context.User.IsInRole("Teachers"))
                     {
                         lblOptions.Text = "Teachers Dashboard";
-                        liApplicationList.Visible = false;
+                        //liApplicationList.Visible = false;
                     }
                     else if (Context.User.IsInRole("Student"))
                     {
                         lblOptions.Text = "Student Dashboard";
-                        liApplicationList.Visible = false;
+                        //liApplicationList.Visible = false;
+                        liPendingApplication.Visible = false;
+                        liReviewApplication.Visible = false;
+                        liStudentsList.Visible = false;
+                        liApplicationStatus.Visible = true;
                     }
                     else
                     {
                         lblOptions.Text = "User Dashboard";
                         liApplication.Visible = true; // Keep this visible for all authenticated users
-                        liApplicationList.Visible = false;
+                        liPendingApplication.Visible = false;
                     }
                 }
                 else
                 {
                     lblOptions.Text = "";
                     liApplication.Visible = false;
-                    liApplicationList.Visible = false;
+                    liPendingApplication.Visible = false;
                 }
             }
         }
